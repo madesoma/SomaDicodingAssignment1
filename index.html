@@ -7,151 +7,6 @@
     <title>Made Soma - a language teacher, a technology anthusiast, and edupreneur </title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Color Combination Link: https://colorhunt.co/palette/f6fbf4f5df995fd0684b8673  -->
-
-    <style> 
-
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-        }
-
-        #header-container {
-            padding: 0 20px;
-            height: 60px;
-            background-color: #4B8673;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-        }
-
-        .div-logo {
-            display: flex;
-        }
-
-        .div-logo img {
-            width: 40px;
-            height: 40px;
-            margin-right: 10px;
-        }
-        .nav-container ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-
-        .nav-container li{
-            list-style: none;
-            margin: 0 10px;
-        }
-
-        .nav-container a {
-            text-decoration: none;
-            color: #000;
-        }
-
-        .nav-container a:hover {
-            color: #fff;
-        }
-
-        .nav-container a.active {
-            color: #fff;
-        }
-
-        .nav-container a.active:hover {
-            color: #fff;
-        }
-
-        .nav-container a.active:focus {
-            color: #fff;
-        }
-
-        body {
-            background-color: #f5f5f5;
-            margin: 0; 
-        }
-
-        #hero{
-            background-image: url("img/hero.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh;
-        }
-
-        #hero h1{
-            font-size: 3em;
-            color: #fff;
-            font-weight: bold;
-            margin: 0;
-            text-align: center;
-        }
-
-        #projects{
-            background-color: #fff;
-            padding: 10px;
-            margin: 0 auto;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-            background-color: #5FD068;
-            min-height: 400px;
-            border: solid 2px black;
-            border-radius: 10px;
-        }
-
-        #projects h2{
-            color: #fff;
-            font-weight: bold;
-            margin: 0;
-            text-align: center;
-            margin: 5px auto;
-        }
-        
-        #projects h3{
-            color: #fff;
-            font-weight: bold;
-            margin: 0;
-            text-align: center;
-            margin: 5px auto;
-        }
-        #projects p{
-            color: #000;
-            font-size: 1.2em;
-            margin: 0;
-            text-align: center;
-            margin: 5px auto;
-        }
-
-        .project{
-            flex-grow: 1;
-            background-color: #4B8673;
-            padding: 20px;
-            margin: auto 30px;
-            border: 1px solid #fff;
-        }
-
-        .project img{
-            width: 300px;
-        }
-
-        #contact{
-            background-color: #fff;
-            padding: 10px;
-            margin: 0 auto;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-            background-color: #5FD068;
-            min-height: 400px;
-            border: solid 2px black;
-            border-radius: 10px;
-        }
-
-        footer{
-            background-color: #4B8673;
-            padding: 20px;
-            margin: 0 auto;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-            text-align: center;
-        }
-    </style>
   </head>
   <body>
     <header> 
@@ -165,6 +20,7 @@
             <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="bio.html">My Story</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -172,56 +28,67 @@
         </div>
     </header>
     <main>
-        <article id="hero"> 
-            <div class="hero-text">
-                <h1>
-                    Hey, I'm Soma 
-                    <br> Welcome to my virtual house
-                </h1>
-            </div>
-        </article>
-
-        <article class="container" id="about"> 
-            <div id="about-div1">
-                <img src="img/soma.jpg" alt="soma">
-            </div>
-
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>I'm a language teacher, technology anthusiast, and edupreneur. I'm currently working on a project called <a href="https://jembatanbahasa.com"> Jembatan Bahasa </a> </p>
-            </div>
-        </article>
-
-        <article   id="projects">
-            <h2>My Current Projects</h2>
-            <div class="container">
-                <div class="project" id="project1">
-                    <img src="img/project1.jpg" alt="Project 1">
-                    <h3>Jembatan Bahasa</h3> 
-                    <p> It's an Indonesian langauge school based in Canggu Bali. Learn more at <a href="https://jembatanbahasa.com" target="_blank"> www.jembatanbahasa.com </a> </p>
+        <div id="main-div">
+            <article id="hero"> 
+                <div class="hero-text">
+                    <h1>
+                        Hey, I'm Soma 
+                        <br> Welcome to my virtual house
+                    </h1>
                 </div>
+            </article>
+
+            <article class="container" id="about"> 
+                <div id="about-div1">
+                    <img src="img/soma.jpg" alt="soma">
+                </div>
+
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I'm a language teacher, technology anthusiast, and edupreneur. I'm currently working on a project called <a href="https://jembatanbahasa.com"> Jembatan Bahasa </a> </p>
+                </div>
+            </article>
+
+            <article   id="projects">
+                <h2>My Current Projects</h2>
+                <div class="container">
+                    <div class="project" id="project1">
+                        <img src="img/project1.jpg" alt="Project 1">
+                        <h3>Jembatan Bahasa</h3> 
+                        <p> It's an Indonesian langauge school based in Canggu Bali. Learn more at <a href="https://jembatanbahasa.com" target="_blank"> www.jembatanbahasa.com </a> </p>
+                    </div>
+        
+                    <div class="project" id="project2">
+                        <img src="img/project2.jpg" alt="Project 2">
+                        <h3>JB English </h3> 
+                        <p> It's an English language school for Indonesian and international learners. Learn more at <a href="https://jbenglishbali.com" target="_blank"> www.jbenglishbali.com </a> </p>
+                    </div>
+        
+                    <div class="project" id="project3">
+                        <img src="img/project3.jpg" alt="Project 3">
+                        <h3>Global Shapers</h3> 
+                        <p> It's a youth community organization to connect local change makers. Learn more at <a href="https://www.globalshapers.org/hubs/denpasar-hub" target="_blank"> www.globalshapers.org </a> </p>
+                    </div>
+                </div> 
     
-                <div class="project" id="project2">
-                    <img src="img/project2.jpg" alt="Project 2">
-                    <h3>JB English </h3> 
-                    <p> It's an English language school for Indonesian and international learners. Learn more at <a href="https://jbenglishbali.com" target="_blank"> www.jbenglishbali.com </a> </p>
-                </div>
-    
-                <div class="project" id="project3">
-                    <img src="img/project3.jpg" alt="Project 3">
-                    <h3>Global Shapers</h3> 
-                    <p> It's a youth community organization to connect local change makers. Learn more at <a href="https://www.globalshapers.org/hubs/denpasar-hub" target="_blank"> www.globalshapers.org </a> </p>
-                </div>
-            </div> 
- 
-        </article> 
+            </article> 
 
-        <article id="contact"> 
-            <div class="contact-text">
-                <h2>Contact Me</h2>
-                <p>Click here to reveal my contact details </p>
-            </div>
-        </article>
+            <article id="contact"> 
+                <div class="contact-text">
+                    <h2>Contact Me</h2>
+                    <p>Click here to reveal my contact details </p>
+                </div>
+            </article>
+        </div>
+        <aside> 
+            <div class="container" id="aside-div">
+                <div class="aside-text">
+                    <h2>Contact Details</h2>
+                    <p>
+                        <strong>Email: </strong> <a href="mailto:soma.made@gmail.com">soma.made@gmail.com</a> <br>
+                        <strong>WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=6281915664288">+62 81 915 664 288 </a> <br>
+                    </p>
+        </aside>
     </main>
 
     <footer>
