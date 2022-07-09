@@ -7,6 +7,8 @@
     <title>Made Soma - a language teacher, a technology anthusiast, and edupreneur </title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Color Combination Link: https://colorhunt.co/palette/f6fbf4f5df995fd0684b8673  -->
+    <link rel="javascript" href="js/index.js">
+
   </head>
   <body>
     <header> 
@@ -17,13 +19,25 @@
             </div>
             
             <nav class="nav-container">
-            <ul>
+
+            <ul #wide-menu>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="bio.html">My Story</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Menu</button>
+                <div id="menuDropdown" class="dropdown-list">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="bio.html">My Story</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
             </nav>
         </div>
     </header>
@@ -39,19 +53,20 @@
             </article>
 
             <article class="container" id="about"> 
-                <div id="about-div1">
-                    <img src="img/soma.jpg" alt="soma">
+                <div id="div1"> 
+                    <img src="img/soma.jpg" alt="Soma">
                 </div>
-
                 <div class="about-text">
                     <h2>About Me</h2>
-                    <p>I'm a language teacher, technology anthusiast, and edupreneur. I'm currently working on a project called <a href="https://jembatanbahasa.com"> Jembatan Bahasa </a> </p>
+                    <p>I'm a language teacher, technology anthusiast, and edupreneur. I'm currently working on education and community projects in Bali, Indonesia.  </a> </p>
+
+                    <p>To read more about my story, please click <a href="bio.html"> this link </a>. </p>
                 </div>
             </article>
 
             <article   id="projects">
                 <h2>My Current Projects</h2>
-                <div class="container">
+                <div class="projects-div">
                     <div class="project" id="project1">
                         <img src="img/project1.jpg" alt="Project 1">
                         <h3>Jembatan Bahasa</h3> 
@@ -73,22 +88,27 @@
     
             </article> 
 
-            <article id="contact"> 
+            <article class="container contact"> 
                 <div class="contact-text">
                     <h2>Contact Me</h2>
-                    <p>Click here to reveal my contact details </p>
+                    <p>Feel free to reach to me if you have any questions</p>
+                </div>
+                <div class="contact-details"> 
+                    <div class="contact-detail">
+                        <img src="img/wa.png" alt="phone">
+                        <p><a href="https://api.whatsapp.com/send?phone=6281915664288">+62 819-1566-4288</a></p>
+                    </div>
+                    <div class="contact-detail">
+                        <img src="img/email.png" alt="email">
+                        <p> <a href="mailto:soma.made@gmail.com"> soma.made@gmail.com </a> </p>
+                    </div>
+                    <div class="contact-detail">
+                        <img src="img/web.png" alt="email">
+                        <p> <a href="https://madesoma.com"> www.madesoma.com </a> </p>
+                    </div>
                 </div>
             </article>
         </div>
-        <aside> 
-            <div class="container" id="aside-div">
-                <div class="aside-text">
-                    <h2>Contact Details</h2>
-                    <p>
-                        <strong>Email: </strong> <a href="mailto:soma.made@gmail.com">soma.made@gmail.com</a> <br>
-                        <strong>WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=6281915664288">+62 81 915 664 288 </a> <br>
-                    </p>
-        </aside>
     </main>
 
     <footer>

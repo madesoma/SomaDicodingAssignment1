@@ -7,6 +7,80 @@
     <title>Made Soma - a language teacher, a technology anthusiast, and edupreneur </title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Color Combination Link: https://colorhunt.co/palette/f6fbf4f5df995fd0684b8673  -->
+
+    <style> 
+        body {
+            background-color: #f6fbf4;
+        }
+
+        #bio-main{
+            display: flex;
+            justify-items: space-around;
+            margin-top: 20px
+        }
+
+        @media screen and (max-width: 770px) {
+            #bio-main{
+                display: block;
+            }
+        } 
+
+        #story-article img{
+            width: 100%;
+        }
+          
+        #story-article {
+            margin: 20px;
+        }
+
+        #story-article figcaption{
+            font-style: italic;
+        }
+
+        #story-article h1{
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: auto;
+            text-align: center;
+        }
+
+        #story-article h2{
+            margin: 15px 20px 0px 20px;
+        }
+
+        #story-article p {
+            font-size: 1.2em;
+            line-height: 1.5em;
+            margin: auto 20px;
+            text-align: justify;
+        }
+
+        #aside-div{
+            margin: 80px 20px; 
+            text-align: center;
+        }
+
+        #aside img{
+            width: 100%;
+        }
+
+        #aside-div h2{
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: auto;
+            text-align: center;
+        }
+
+        #contact-detail {
+            justify-content: center;
+        }
+
+        #contact-detail img{
+            width: 30px;
+            margin: 5px 10px; 
+        }
+
+    </style>
   </head>
   <body>
     <header> 
@@ -17,22 +91,33 @@
             </div>
             
             <nav class="nav-container">
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="bio.html">My Story</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+                <ul #wide-menu>
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="bio.html">My Story</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+    
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Menu</button>
+                    <div id="menuDropdown" class="dropdown-list">
+                        <a href="index.html#hero">Home</a>
+                        <a href="index.html#about">About</a>
+                        <a href="bio.html">My Story</a>
+                        <a href="index.html#projects">Projects</a>
+                        <a href="index.html#contact">Contact</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
-    <main>
-        <article>
+    <main id="bio-main">
+        <article id="story-article">
                 <h1 class="entry-title">My Story </h1>	        
         <div>
             <figure class="aligncenter">
-                <img src="img/soma-teaching.jpg" alt="Soma Teaching" class="wp-image-78"/>
+                <img src="img/soma-teaching.jpg" alt="Soma"/>
                 <figcaption>teaching English in Raja Ampat, West Papua</figcaption>
             </figure>
         </div>
@@ -56,7 +141,7 @@
             and stayed for 5 years. Some positions I held during my time there were high school Indonesian teacher, 
             primary classroom teacher, English teacher, and Indonesian curriculum developer and trainer. 
         </p>
-        
+        <br> 
         <p>In 2019, after coming back my master study in the United Kingdom, I embarked on an edupreneurship journey. 
             Along with likeminded teacher friends, I founded the <a href="https://jembatanbahasa.com" target="_blank" rel="noreferrer noopener">Jembatan Bahasa</a>, 
             an Indonesian language school for international learners and <a href="https://jbenglishbali.com" target="_blank" rel="noreferrer noopener">
@@ -75,15 +160,25 @@
         </article>
     
         <aside> 
-            <div class="container" id="aside-div">
-                <img src="img/bio-photo.jpeg" alt="soma" width="300">
+            <div id="aside-div">
+                <img src="img/bio-photo.jpeg" alt="soma">
+
                 <div class="aside-text">
                     <h2>Made Soma</h2>
-                    <p>
-                        <strong>Email: </strong> <a href="mailto:soma.made@gmail.com">soma.made@gmail.com</a> <br>
-                        <strong>WhatsApp:</strong> <a href="https://api.whatsapp.com/send?phone=6281915664288">+62 81 915 664 288 </a> <br>
-                    </p>
+                    <div class="contact-detail" id="contact-detail">
+                        <img src="img/wa.png" alt="phone">
+                        <p><a href="https://api.whatsapp.com/send?phone=6281915664288">+62 819-1566-4288</a></p>
+                    </div> 
+                    <div class="contact-detail" id="contact-detail">
+                        <img src="img/email.png" alt="email">
+                        <p> <a href="mailto:soma.made@gmail.com"> soma.made@gmail.com </a> </p>
+                    </div>
+                    <div class="contact-detail" id="contact-detail">
+                        <img src="img/web.png" alt="email">
+                        <p> <a href="https://madesoma.com"> www.madesoma.com </a> </p>
+                    </div>
                 </div>
+            </div>
         </aside>
     </main>
 

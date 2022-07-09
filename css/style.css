@@ -1,9 +1,6 @@
 /* Style the header */
 .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
 }
 
 #header-container {
@@ -11,10 +8,14 @@
     height: 60px;
     background-color: #4B8673;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: space-between;
 }
 
 .div-logo {
     display: flex;
+    color: white; 
+    font-family: cursive;
 }
 
 .div-logo img {
@@ -29,6 +30,12 @@
     padding: 0 20px;
 }
 
+@media screen and (max-width: 650px) {
+    .nav-container ul{
+        display: none;
+    }
+}
+
 .nav-container li{
     list-style: none;
     margin: 0 10px;
@@ -36,24 +43,66 @@
 
 .nav-container a {
     text-decoration: none;
-    color: #000;
+    color: white;
 }
 
 .nav-container a:hover {
-    color: #fff;
+    color: #F5DF99;
 }
 
 .nav-container a.active {
-    color: #fff;
+    color: #F5DF99;
 }
 
 .nav-container a.active:hover {
-    color: #fff;
+    color: #F5DF99;
 }
 
 .nav-container a.active:focus {
-    color: #fff;
+    color: #F5DF99;
 }
+
+/* Style the Dropdown Menu */
+@media screen and (min-width: 650px) {
+    .dropdown {
+        display: none;
+    }
+}
+
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #5FD068;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #4B8673;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-list {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    background-color: #5FD068;
+  }
+
+  #menuDropdown a {
+    display: block;
+    margin: 20px;
+    font-size: 16px;
+}
+  
+  .show {
+    display: block;
+}
+
 
 /* Style the header */
 body {
@@ -69,25 +118,73 @@ body {
     height: 100vh;
 }
 
+.hero-text{
+    background-image: linear-gradient(177deg, #4B8673, transparent);
+}
+
 #hero h1{
     font-size: 3em;
     color: #fff;
     font-weight: bold;
     margin: 0;
     text-align: center;
+    font-family: cursive;
+}
+
+@media screen and (max-width: 717px) {
+    #hero h1{
+        font-size: 2em;
+    }
+}
+
+#about{
+    background-color: #fff;
+    padding: 10px;
+    min-height: 400px;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+#div1 {
+    margin: auto;
+    border: #5FD068 solid 2px;
+}
+
+.about-text {
+    margin: 10px 30px;
+    max-width: 800px;
+}
+
+#about img {
+    width: 235px; 
+}
+.about-text h2, .about-text p {
+    text-align: left;
 }
 
 #projects{
-    background-color: #fff;
     padding: 10px;
     margin: 0 auto;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     background-color: #5FD068;
     min-height: 400px;
-    border: solid 2px black;
-    border-radius: 10px;
 }
 
+#projects img{
+    width: 100%;
+}
+
+.projects-div{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 815px) {
+    .projects-div{
+        display: block;
+        margin-top: 20px;
+    }
+} 
+    
 #projects h2{
     color: #fff;
     font-weight: bold;
@@ -112,32 +209,51 @@ body {
 }
 
 .project{
-    flex-grow: 1;
     background-color: #4B8673;
     padding: 20px;
-    margin: auto 30px;
+    margin: 10px;
     border: 1px solid #fff;
+    text-align: center;
 }
 
-.project img{
-    width: 300px;
-}
 
-#contact{
-    background-color: #fff;
+.contact{
     padding: 10px;
     margin: 0 auto;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    background-color: #5FD068;
     min-height: 400px;
-    border: solid 2px black;
-    border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url("../img/contact-bg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: initial;
 }
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+}
+
+.contact img {
+    width: 30px;
+    margin: 5px 10px;
+}
+
+.contact-text h2, .contact-text p, .contact-text a {
+    background-color: white;
+    text-decoration: none;
+}
+
+.contact-detail a {
+    text-decoration: none;
+    color: black;
+}
+
 
 footer{
     background-color: #4B8673;
     padding: 20px;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
 }
